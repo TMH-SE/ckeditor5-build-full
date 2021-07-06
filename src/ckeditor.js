@@ -55,6 +55,7 @@ import ImageTextAlternative from '@ckeditor/ckeditor5-image/src/imagetextalterna
 import SimpleUploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/simpleuploadadapter'
 import TableProperties from '@ckeditor/ckeditor5-table/src/tableproperties'
 import TableCellProperties from '@ckeditor/ckeditor5-table/src/tablecellproperties'
+import HtmlEmbed from '@ckeditor/ckeditor5-html-embed/src/htmlembed'
 // import RestrictedEditingMode from '@ckeditor/ckeditor5-restricted-editing/src/restrictededitingmode'
 
 export default class FullEditor extends ClassicEditorBase {}
@@ -107,7 +108,8 @@ FullEditor.builtinPlugins = [
   ImageTextAlternative,
   SimpleUploadAdapter,
   TableProperties,
-  TableCellProperties
+  TableCellProperties,
+  HtmlEmbed
 ]
 
 // Editor configuration.
@@ -143,6 +145,7 @@ FullEditor.defaultConfig = {
       'specialCharacters',
       'imageUpload',
       'mediaEmbed',
+      'htmlEmbed',
       '|',
       'highlight',
       'blockQuote',

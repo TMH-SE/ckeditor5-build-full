@@ -26,7 +26,7 @@ const resolveModule = (
 }
 
 const config: webpack.Configuration = {
-  devtool: 'source-map',
+  devtool: false,
   performance: { hints: false },
   entry: {
     ckeditor: resolveModule(resolvePath, 'src/ckeditor')
